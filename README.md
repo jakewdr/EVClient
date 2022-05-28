@@ -1,6 +1,11 @@
 # EVClient
 Some cool ev.io client :)
 
+# Hotkeys
+- F11, toggle fullscreen
+- F5, refresh page
+- F6, join link stored in clipboard
+
 # Build instructions
 ```sh
 Install Git and Nodejs
@@ -22,8 +27,3 @@ If you want to build it:
 ```sh
 npm run dist
 ```
-
-# Hotkeys
-- F11, toggle fullscreen
-- F5, refresh page
-- F6, join link stored in clipboard
