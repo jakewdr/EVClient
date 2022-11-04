@@ -2,9 +2,6 @@ const { app, BrowserWindow, screen, clipboard } = require("electron");
 const path = require('path');
 require('v8-compile-cache');
 
-//EVClient by m2rk
-//Credits to giantninja908 - JANREX & gatoclient - Gatohost
-
 let win;
 
 const init =
