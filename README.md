@@ -4,7 +4,8 @@ Some cool ev.io client :)
 # Hotkeys
 - F11, toggle fullscreen
 - F5, refresh page
-- F6, join link stored in clipboard
+- F6 | Go to https://ev.io / find new lobby
+- F7 | Join link stored in clipboard
 
 # Build instructions
 ```sh
