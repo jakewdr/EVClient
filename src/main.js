@@ -35,9 +35,6 @@ const init =
         event.preventDefault();
         shell.openExternal(url);
         return;
-      } else if (url.startsWith('https://ev.io')) {
-        win.loadURL("https://ev.io");
-        event.preventDefault()
       } else {
         event.preventDefault();
         const newWin = new BrowserWindow({
@@ -56,6 +53,7 @@ const init =
           newWin.loadURL(url);
         }
         event.newGuest = newWin;
+      }
       });
   }
 
