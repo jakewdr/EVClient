@@ -108,6 +108,9 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('enable-oop-rasterization');
   app.commandLine.appendSwitch('enable-zero-copy');
   app.commandLine.appendSwitch('max-gum-fps=9999');
+
+  // Opal's additions
+  
   app.commandLine.appendSwitch('alsa-enable-upsampling');
   app.commandLine.appendSwitch('audio-process-high-priority');
   app.commandLine.appendSwitch('enable-exclusive-audio');
