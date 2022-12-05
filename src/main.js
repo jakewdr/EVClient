@@ -95,7 +95,7 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('disable-logging');
   app.commandLine.appendSwitch('disable-web-security');
   app.commandLine.appendSwitch('webrtc-max-cpu-consumption-percentage=100');
-  //app.commandLine.appendSwitch('disable-frame-rate-limit');
+  app.commandLine.appendSwitch('disable-frame-rate-limit');
   app.commandLine.appendSwitch('disable-gpu-vsync');
   app.commandLine.appendSwitch('enable-webgl');
   app.commandLine.appendSwitch('disable-background-timer-throttling');
