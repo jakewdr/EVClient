@@ -1,6 +1,6 @@
 {
-  "name": "EVClient",
-  "version": "1.2.2",
+  "name": "evclient",
+  "version": "1.2.3",
   "description": "EVClient ev.io client by m2rk",
   "main": "src/main.js",
   "scripts": {
@@ -23,8 +23,8 @@
     "url": "https://github.com/m2rk1312/EVClient.git"
   },
   "devDependencies": {
-    "electron": "^10.4.7",
-    "electron-builder": "^23.6.0"
+    "electron": "10.4.7",
+    "electron-builder": "^22.10.3"
   },
   "dependencies": {
     "v8-compile-cache": "^2.3.0"

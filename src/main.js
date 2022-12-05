@@ -11,8 +11,15 @@ const init =
       width: width,
       height: height,
       fullscreen: true,
-      autoHideMenuBar: true
-    })
+      autoHideMenuBar: true,
+      webPreferences: {
+        nodeIntegration: false,
+        nodeIntegrationInWorker: true,
+        webSecurity: false,
+        contextIsolation: false,
+        devTools: true,
+       }
+    });
 
     win.removeMenu();
     win.loadURL('https://ev.io');
@@ -23,6 +30,7 @@ const init =
       if (input.key === "F5") { win.reload(); event.preventDefault() }
       if (input.key === "F6") { win.loadURL("https://ev.io"); event.preventDefault() }
       if (input.key === "F7") { win.loadURL(clipboard.readText()); event.preventDefault() }
+      if (input.key === "F8") {win.loadURL("https://ev.io/user/login"); event.preventDefault()}
     });
 
     win.on('close', () => { app.quit() });
@@ -90,7 +98,6 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('disable-frame-rate-limit');
   app.commandLine.appendSwitch('disable-gpu-vsync');
   app.commandLine.appendSwitch('enable-webgl');
-  app.commandLine.appendSwitch('disable-background-timer-throttling');
   app.commandLine.appendSwitch('disable-renderer-backgrounding');
   app.commandLine.appendSwitch('enable-highres-timer');
   app.commandLine.appendSwitch('enable-accelerated-2d-canvas');
@@ -101,6 +108,18 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('enable-oop-rasterization');
   app.commandLine.appendSwitch('enable-zero-copy');
   app.commandLine.appendSwitch('max-gum-fps=9999');
+
+  // Opal's additions
+  
+  app.commandLine.appendSwitch('alsa-enable-upsampling');
+  app.commandLine.appendSwitch('audio-process-high-priority');
+  app.commandLine.appendSwitch('enable-exclusive-audio');
+  app.commandLine.appendSwitch('disable-background-timer-throttling');
+  app.commandLine.appendSwitch('disable-backing-store-limit');
+  app.commandLine.appendSwitch('disable-background-networking');
+  app.commandLine.appendSwitch('double-buffer-compositing'); 
+  app.commandLine.appendSwitch('allow-pre-commit-input');
+
 }
 
 addSwitches();
