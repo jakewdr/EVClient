@@ -94,7 +94,7 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('disable-logging');
   app.commandLine.appendSwitch('disable-web-security');
   app.commandLine.appendSwitch('webrtc-max-cpu-consumption-percentage=100');
-  app.commandLine.appendSwitch('disable-frame-rate-limit');
+  //app.commandLine.appendSwitch('disable-frame-rate-limit');
   app.commandLine.appendSwitch('disable-gpu-vsync');
   app.commandLine.appendSwitch('enable-webgl');
   app.commandLine.appendSwitch('disable-background-timer-throttling');
@@ -114,7 +114,6 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('disable-background-timer-throttling');
   app.commandLine.appendSwitch('disable-backing-store-limit');
   app.commandLine.appendSwitch('disable-background-networking');
-  app.commandLine.appendSwitch('enable-quic');
   app.commandLine.appendSwitch('double-buffer-compositing'); 
   app.commandLine.appendSwitch('allow-pre-commit-input');
 
