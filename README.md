@@ -6,6 +6,7 @@ Some cool ev.io client :)
 - F5, refresh page
 - F6 | Go to https://ev.io / find new lobby
 - F7 | Join link stored in clipboard
+- F8 | Open the login page
 
 # Build instructions
 ```sh

@@ -30,6 +30,7 @@ const init =
       if (input.key === "F5") { win.reload(); event.preventDefault() }
       if (input.key === "F6") { win.loadURL("https://ev.io"); event.preventDefault() }
       if (input.key === "F7") { win.loadURL(clipboard.readText()); event.preventDefault() }
+      if (input.key === "F8") {win.loadURL("https://ev.io/user/login"); event.preventDefault()}
     });
 
     win.on('close', () => { app.quit() });
