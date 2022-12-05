@@ -98,7 +98,6 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('disable-frame-rate-limit');
   app.commandLine.appendSwitch('disable-gpu-vsync');
   app.commandLine.appendSwitch('enable-webgl');
-  app.commandLine.appendSwitch('disable-background-timer-throttling');
   app.commandLine.appendSwitch('disable-renderer-backgrounding');
   app.commandLine.appendSwitch('enable-highres-timer');
   app.commandLine.appendSwitch('enable-accelerated-2d-canvas');
