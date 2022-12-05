@@ -11,8 +11,15 @@ const init =
       width: width,
       height: height,
       fullscreen: true,
-      autoHideMenuBar: true
-    })
+      autoHideMenuBar: true,
+      webPreferences: {
+        nodeIntegration: false,
+        nodeIntegrationInWorker: true,
+        webSecurity: false,
+        contextIsolation: false,
+        devTools: true,
+       }
+    });
 
     win.removeMenu();
     win.loadURL('https://ev.io');
@@ -101,6 +108,16 @@ const addSwitches = () => {
   app.commandLine.appendSwitch('enable-oop-rasterization');
   app.commandLine.appendSwitch('enable-zero-copy');
   app.commandLine.appendSwitch('max-gum-fps=9999');
+  app.commandLine.appendSwitch('alsa-enable-upsampling');
+  app.commandLine.appendSwitch('audio-process-high-priority');
+  app.commandLine.appendSwitch('enable-exclusive-audio');
+  app.commandLine.appendSwitch('disable-background-timer-throttling');
+  app.commandLine.appendSwitch('disable-backing-store-limit');
+  app.commandLine.appendSwitch('disable-background-networking');
+  app.commandLine.appendSwitch('enable-quic');
+  app.commandLine.appendSwitch('double-buffer-compositing'); 
+  app.commandLine.appendSwitch('allow-pre-commit-input');
+
 }
 
 addSwitches();
